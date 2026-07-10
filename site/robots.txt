@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /blog/_modele-article.html
+
+Sitemap: https://fpnaturenuisible.fr/sitemap.xml
