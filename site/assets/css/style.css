@@ -64,6 +64,10 @@ strong { font-weight: 700; }
   font-variation-settings: "wdth" 116;
   text-transform: uppercase;
   letter-spacing: 0.005em;
+  /* Sur écran étroit, un mot long ("EXTERMINATION", "DÉSINSECTISATION") dépasse
+     la largeur de .wrap et se fait rogner par l'overflow:hidden du hero. */
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 h1.display { font-size: clamp(1.9rem, 5.4vw, 3.4rem); }
 h2.display { font-size: clamp(1.5rem, 3.6vw, 2.35rem); }
@@ -301,6 +305,8 @@ h2.display { font-size: clamp(1.5rem, 3.6vw, 2.35rem); }
   align-items: center;
   padding-block: clamp(3rem, 7vw, 5.5rem);
 }
+/* Sans ça, min-width:auto laisse une piste s'élargir au-delà de son conteneur. */
+.hero .wrap > * { min-width: 0; }
 .hero h1 { color: var(--blanc); }
 .hero h1 .hl { color: var(--jaune); }
 .hero__sub { color: var(--gris-2); font-size: clamp(1rem, 1.6vw, 1.16rem); max-width: 36rem; }
@@ -332,6 +338,14 @@ h2.display { font-size: clamp(1.5rem, 3.6vw, 2.35rem); }
 @media (max-width: 880px) {
   .hero .wrap { grid-template-columns: 1fr; }
   .hero__img { order: -1; transform: none; box-shadow: 6px 6px 0 rgba(255, 196, 0, 0.9); }
+  /* Accueil : la photo est en portrait. Pleine largeur et placée en premier, elle
+     occupe tout l'écran et repousse le titre et le bouton d'appel sous la ligne
+     de flottaison — d'où le texte d'abord et la largeur bornée. */
+  .hero:not(.hero--sub) .hero__img {
+    order: 0;
+    max-width: 22rem;
+    margin-inline: auto;
+  }
 }
 
 /* ---------- Bandeau urgence ---------- */
@@ -739,7 +753,9 @@ a.card { text-decoration: none; color: inherit; }
 .callbar__devis { background: var(--noir-2); color: var(--creme); border: 1.5px solid var(--noir-3); }
 @media (max-width: 767px) {
   .callbar { display: flex; }
-  body { padding-bottom: 74px; }
+  /* La barre fait 93px dès que les libellés passent sur 2 lignes (< 600px), et
+     s'agrandit encore de la safe-area sur iPhone : réserver la même hauteur. */
+  body { padding-bottom: calc(96px + env(safe-area-inset-bottom)); }
 }
 
 /* ---------- Animations ---------- */
