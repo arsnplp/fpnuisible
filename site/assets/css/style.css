@@ -166,7 +166,9 @@ h2.display { font-size: clamp(1.5rem, 3.6vw, 2.35rem); }
   border-bottom: 2px solid var(--noir-3);
 }
 .header.is-scrolled { box-shadow: 0 8px 30px rgba(0, 0, 0, 0.45); }
-.header .wrap {
+/* Enfant direct uniquement : le menu mobile (.mnav) est aussi dans le header et
+   utilise .wrap — en descendant, cette règle l'alignait sur une seule ligne. */
+.header > .wrap {
   display: flex;
   align-items: center;
   justify-content: space-between;
