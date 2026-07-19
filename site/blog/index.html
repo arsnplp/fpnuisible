@@ -139,13 +139,15 @@
     <div class="wrap">
       <div class="grid grid--3">
         <!-- ============================================================
-             POUR AJOUTER UN ARTICLE :
-             1. Dupliquez le dossier /blog/_modele-article.html vers
-                /blog/mon-slug/index.html et remplissez les [PLACEHOLDERS].
-             2. Copiez le bloc <a class="card">…</a> ci-dessous en
-                première position et adaptez lien, image, tag et titre.
-             3. Ajoutez l'URL dans /sitemap.xml.
+             POUR AJOUTER UN ARTICLE (automatise) :
+             1. Copiez /blog/_modele-article.html vers /blog/mon-slug/index.html
+                et remplissez le contenu ET le bloc <!-- CARD ... --> en haut.
+             2. Lancez : node tools/build-blog.mjs
+                → la liste ci-dessous ET le sitemap se regenerent tout seuls.
+             3. Commit + push : le serveur se met en ligne automatiquement.
+             NE PAS editer a la main entre les marqueurs BLOG:AUTO (ecrases).
              ============================================================ -->
+        <!-- BLOG:AUTO-START -->
         <a class="card reveal" href="/blog/comment-reconnaitre-nid-frelon-asiatique/">
           <div class="card__img card__img--wide"><img src="/assets/img/blog-frelon-asiatique.jpg" alt="Nid de frelons asiatiques dans un arbre" loading="lazy" width="1000" height="666"></div>
           <div class="card__body">
@@ -173,6 +175,7 @@
             <span class="card__link">Lire l'article →</span>
           </div>
         </a>
+        <!-- BLOG:AUTO-END -->
       </div>
     </div>
   </section>

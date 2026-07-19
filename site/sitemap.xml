@@ -210,22 +210,24 @@
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
+  <!-- BLOG:AUTO-START -->
   <url>
     <loc>https://fpnaturenuisible.fr/blog/comment-reconnaitre-nid-frelon-asiatique/</loc>
-    <lastmod>2026-07-09</lastmod>
+    <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://fpnaturenuisible.fr/blog/guepe-abeille-frelon-differences/</loc>
-    <lastmod>2026-07-09</lastmod>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://fpnaturenuisible.fr/blog/se-debarrasser-des-cafards/</loc>
-    <lastmod>2026-07-09</lastmod>
+    <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
+  <!-- BLOG:AUTO-END -->
 </urlset>
