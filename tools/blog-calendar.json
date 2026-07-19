@@ -1,0 +1,105 @@
+{
+  "_comment": "File d'attente des sujets d'articles pour la routine hebdomadaire. L'agent prend le PREMIER sujet 'pending', écrit l'article, passe son status à 'published' (avec la date). Quand plus aucun 'pending' : ne rien inventer, prévenir par e-mail. Ajouter de nouveaux sujets en fin de liste au besoin.",
+  "articles": [
+    {
+      "slug": "frelon-asiatique-aix-reconnaitre-signaler",
+      "title": "Frelon asiatique à Aix-en-Provence : reconnaître et signaler un nid",
+      "cardTitle": "Frelon asiatique : reconnaître et signaler un nid",
+      "tag": "Frelons",
+      "theme": "frelons",
+      "keyword": "frelon asiatique Aix-en-Provence",
+      "brief": "Distinguer frelon asiatique et européen (taille, couleur des pattes, thorax). Où se cachent les nids (haut des arbres, toitures, cabanons) et pourquoi ils sont les plus gros et dangereux d'août à octobre. Danger : piqûres, attaque collective à moins de 5 m. Ne JAMAIS approcher ni traiter soi-même. Comment signaler (mairie, plateforme de signalement) et qui appeler. Lien interne vers /destruction-nid-de-frelons/.",
+      "status": "pending"
+    },
+    {
+      "slug": "prix-destruction-nid-de-guepes-2026",
+      "title": "Nid de guêpes : quel prix pour une intervention en 2026 ?",
+      "cardTitle": "Nid de guêpes : quel prix en 2026 ?",
+      "tag": "Guêpes",
+      "theme": "guepes",
+      "keyword": "prix destruction nid de guêpes",
+      "brief": "Fourchette de prix VALIDÉE : 90 à 180 € selon la hauteur et l'accès (ne pas inventer d'autres chiffres). Ce qui fait varier le tarif (hauteur, emplacement sous toiture/dans un mur, urgence, difficulté d'accès). Pourquoi se méfier des prix trop bas. Devis gratuit et prix ferme avant intervention. Lien interne vers /destruction-nid-de-guepes/ et /devis/.",
+      "status": "pending"
+    },
+    {
+      "slug": "piqures-guepes-frelons-bons-reflexes",
+      "title": "Piqûres de guêpes ou de frelons : les bons réflexes en cas d'urgence",
+      "cardTitle": "Piqûres de guêpes ou frelons : les bons réflexes",
+      "tag": "Sécurité",
+      "theme": "frelons",
+      "keyword": "que faire piqûre de guêpe frelon",
+      "brief": "Premiers gestes après une piqûre (retirer le dard s'il y a lieu, désinfecter, froid). Signes de réaction allergique grave (œdème, gêne respiratoire) = appel 15/112 immédiat. Cas des piqûres multiples. Ne pas s'approcher d'un nid pour éviter l'attaque collective. Rester factuel et prudent, pas de conseil médical hasardeux. Lien interne vers /destruction-nid-de-guepes/ et /destruction-nid-de-frelons/.",
+      "status": "pending"
+    },
+    {
+      "slug": "rats-souris-maison-automne",
+      "title": "Rats et souris : pourquoi ils entrent dans les maisons à l'automne",
+      "cardTitle": "Rats et souris : pourquoi ils rentrent à l'automne",
+      "tag": "Dératisation",
+      "theme": "rats",
+      "keyword": "rats souris maison automne",
+      "brief": "Pourquoi les rongeurs cherchent la chaleur et la nourriture dès les premiers froids. Signes d'infestation (bruits, crottes, câbles rongés). Risques (maladies, courts-circuits/incendie). Prévention (obturer les accès). Prix VALIDÉ dératisation : 130 à 300 € (ne pas inventer). Lien interne vers /deratisation/.",
+      "status": "pending"
+    },
+    {
+      "slug": "prix-desinsectisation-cafards-pays-aix",
+      "title": "Cafards : combien coûte une désinsectisation dans le pays d'Aix ?",
+      "cardTitle": "Cafards : combien coûte une désinsectisation ?",
+      "tag": "Cafards",
+      "theme": "cafards",
+      "keyword": "prix désinsectisation cafards",
+      "brief": "Pourquoi les cafards reviennent (gel mal posé, foyers cachés). Méthode pro (gel + suivi jusqu'à éradication). Facteurs de prix (surface, niveau d'infestation, nombre de passages). Rester prudent sur les chiffres : donner une fourchette indicative raisonnable et renvoyer au devis gratuit pour un prix ferme. Lien interne vers /desinsectisation/ et /devis/.",
+      "status": "pending"
+    },
+    {
+      "slug": "chenilles-processionnaires-calendrier-provence",
+      "title": "Chenilles processionnaires : le calendrier de traitement en Provence",
+      "cardTitle": "Chenilles processionnaires : le calendrier de traitement",
+      "tag": "Chenilles",
+      "theme": "chenilles",
+      "keyword": "chenilles processionnaires traitement période",
+      "brief": "Danger urticant (enfants, chiens = urgence vétérinaire). Calendrier : échenillage automne/hiver, éco-pièges janvier-avril, chêne au printemps, phéromones l'été. Pinèdes du pays d'Aix très exposées. Lien interne vers /chenilles-processionnaires/.",
+      "status": "pending"
+    },
+    {
+      "slug": "pigeons-toit-balcon-solutions-durables",
+      "title": "Pigeons sur le toit ou le balcon : quelles solutions durables ?",
+      "cardTitle": "Pigeons sur le toit ou le balcon : les solutions",
+      "tag": "Dépigeonnage",
+      "theme": "pigeons",
+      "keyword": "solution anti-pigeon toit balcon",
+      "brief": "Nuisances (fientes corrosives, maladies, nids). Solutions durables et sans cruauté : pics, filets, dépose de nids, nettoyage/désinfection. Pourquoi les répulsifs maison échouent. Lien interne vers /depigeonnage/.",
+      "status": "pending"
+    },
+    {
+      "slug": "essaim-abeilles-jardin-que-faire",
+      "title": "Essaim d'abeilles dans le jardin : que faire (et pourquoi ne pas le détruire) ?",
+      "cardTitle": "Essaim d'abeilles : que faire au jardin ?",
+      "tag": "Abeilles",
+      "theme": "abeilles",
+      "keyword": "essaim abeilles jardin que faire",
+      "brief": "Différence essaim d'abeilles (protégées, relocalisées) vs nid de guêpes/frelons (détruits). Ne pas paniquer ni asperger : un essaim au repos est peu agressif. FP Nature Nuisible relocalise sans détruire, avec des apiculteurs. Lien interne vers /recuperation-essaim-abeilles/.",
+      "status": "pending"
+    },
+    {
+      "slug": "calendrier-nuisibles-provence-mois-par-mois",
+      "title": "Le calendrier des nuisibles en Provence, mois par mois",
+      "cardTitle": "Le calendrier des nuisibles en Provence",
+      "tag": "Guide",
+      "theme": "generic",
+      "keyword": "calendrier nuisibles Provence",
+      "brief": "RESSOURCE de référence (article un peu plus long, pensé pour être cité/lié). Mois par mois : quel nuisible est actif et quand agir (guêpes/frelons été-automne, chenilles automne-printemps, rongeurs automne-hiver, cafards toute l'année, pigeons toute l'année). Format clair (liste par mois ou par saison). Liens internes vers les prestations concernées.",
+      "status": "pending"
+    },
+    {
+      "slug": "frelon-europeen-ou-asiatique-differences",
+      "title": "Frelon européen ou asiatique : comment les différencier ?",
+      "cardTitle": "Frelon européen ou asiatique : les différences",
+      "tag": "Identification",
+      "theme": "frelons",
+      "keyword": "différence frelon européen asiatique",
+      "brief": "Tableau/critères : taille, couleur (pattes jaunes du frelon asiatique, abdomen sombre), comportement, type de nid, activité. Pourquoi la distinction compte (danger, méthode). Rester factuel. Lien interne vers /destruction-nid-de-frelons/.",
+      "status": "pending"
+    }
+  ]
+}
