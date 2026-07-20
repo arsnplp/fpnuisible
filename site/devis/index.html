@@ -137,42 +137,42 @@
         <!-- ============================================================
              FORMULAIRE DE DEVIS
              À connecter : voir la constante FORM_ENDPOINT dans
-             /assets/js/main.js (Formspree, Web3Forms, Google Forms…).
+             /assets/js/main.js?v=2 (Formspree, Web3Forms, Google Forms…).
              Les attributs name="" sont prêts pour l'envoi.
              ============================================================ -->
-        <form class="form-panel" id="form-devis" novalidate>
+        <form class="form-panel" id="form-devis" data-subject="Demande de devis - fpnaturenuisible.fr" novalidate>
           <h2 class="display" style="font-size:1.3rem;">1. Quel est votre problème&nbsp;?</h2>
           <div class="radio-cards" role="radiogroup" aria-label="Type de nuisible">
             <div class="radio-card">
-              <input type="radio" name="nuisible" value="Nid de guêpes" id="n-guepes" required>
+              <input type="radio" name="Type de nuisible" value="Nid de guêpes" id="n-guepes" required>
               <label for="n-guepes"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><ellipse cx="12" cy="14" rx="5" ry="7"/><path d="M12 7V3M8 4l1.5 2M16 4l-1.5 2M7 12H2m20 0h-5M7 17l-3 2m16-2 3 2"/></svg>Nid de guêpes</label>
             </div>
             <div class="radio-card">
-              <input type="radio" name="nuisible" value="Nid de frelons" id="n-frelons">
+              <input type="radio" name="Type de nuisible" value="Nid de frelons" id="n-frelons">
               <label for="n-frelons"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="8" r="5"/><path d="M12 13v8m-4-5h8"/></svg>Nid de frelons</label>
             </div>
             <div class="radio-card">
-              <input type="radio" name="nuisible" value="Chenilles processionnaires" id="n-chenilles">
+              <input type="radio" name="Type de nuisible" value="Chenilles processionnaires" id="n-chenilles">
               <label for="n-chenilles"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 15q2-3 4 0t4 0 4 0"/><circle cx="18" cy="13" r="3"/><path d="M18 10l1-2.5M20.5 11l2-1.5"/></svg>Chenilles processionnaires</label>
             </div>
             <div class="radio-card">
-              <input type="radio" name="nuisible" value="Essaim d'abeilles" id="n-abeilles">
+              <input type="radio" name="Type de nuisible" value="Essaim d'abeilles" id="n-abeilles">
               <label for="n-abeilles"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 3l7 4v6l-7 4-7-4V7z"/><path d="M12 3v14"/></svg>Essaim d'abeilles</label>
             </div>
             <div class="radio-card">
-              <input type="radio" name="nuisible" value="Rats / souris" id="n-rats">
+              <input type="radio" name="Type de nuisible" value="Rats / souris" id="n-rats">
               <label for="n-rats"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 14c0-4 3.5-7 8-7s8 3 8 7-3.5 6-8 6-8-2-8-6z"/><circle cx="16" cy="12" r="0.5"/><path d="M20 10c2-1 3-3 2-5-2 0-3.5 1-4 3"/></svg>Rats / souris</label>
             </div>
             <div class="radio-card">
-              <input type="radio" name="nuisible" value="Cafards / insectes" id="n-cafards">
+              <input type="radio" name="Type de nuisible" value="Cafards / insectes" id="n-cafards">
               <label for="n-cafards"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><ellipse cx="12" cy="13" rx="6" ry="8"/><path d="M12 5V2M6 8L3 6m18 2 3-2M6 13H2m20 0h-4M6 18l-3 2m18-2 3 2"/></svg>Cafards / insectes</label>
             </div>
             <div class="radio-card">
-              <input type="radio" name="nuisible" value="Pigeons" id="n-pigeons">
+              <input type="radio" name="Type de nuisible" value="Pigeons" id="n-pigeons">
               <label for="n-pigeons"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M16 7c0-2 1.5-4 4-4-1 2 0 4-2 5l-1 1c0 5-4 9-10 9H3l4-4C4 12 3 8 5 5c2 3 5 4 8 4z"/><circle cx="17" cy="5" r="0.5"/></svg>Pigeons</label>
             </div>
             <div class="radio-card">
-              <input type="radio" name="nuisible" value="Autre" id="n-autre">
+              <input type="radio" name="Type de nuisible" value="Autre" id="n-autre">
               <label for="n-autre"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v4m0 4h.01"/></svg>Autre / je ne sais pas</label>
             </div>
           </div>
@@ -181,7 +181,7 @@
           <div class="form-grid">
             <div class="field field--full">
               <label for="urgence">Délai souhaité</label>
-              <select id="urgence" name="urgence">
+              <select id="urgence" name="Urgence">
                 <option value="Dès que possible (urgence)">Dès que possible — c'est urgent</option>
                 <option value="Sous 24 à 48h">Sous 24 à 48 h</option>
                 <option value="Cette semaine">Cette semaine</option>
@@ -194,11 +194,11 @@
           <div class="form-grid">
             <div class="field">
               <label for="nom">Nom *</label>
-              <input type="text" id="nom" name="nom" autocomplete="name" required>
+              <input type="text" id="nom" name="Nom" autocomplete="name" required>
             </div>
             <div class="field">
               <label for="tel">Téléphone *</label>
-              <input type="tel" id="tel" name="telephone" autocomplete="tel" required>
+              <input type="tel" id="tel" name="Telephone" autocomplete="tel" required>
             </div>
             <div class="field">
               <label for="email">E-mail <small>(facultatif)</small></label>
@@ -206,14 +206,14 @@
             </div>
             <div class="field">
               <label for="ville">Code postal &amp; ville *</label>
-              <input type="text" id="ville" name="ville" placeholder="13100 Aix-en-Provence" autocomplete="postal-code" required>
+              <input type="text" id="ville" name="Code postal et ville" placeholder="13100 Aix-en-Provence" autocomplete="postal-code" required>
             </div>
             <div class="field field--full">
               <label for="message">Décrivez la situation <small>(emplacement du nid, hauteur, depuis quand…)</small></label>
-              <textarea id="message" name="message" placeholder="Ex. : nid de frelons en haut d'un pin, à environ 10 m, repéré ce week-end…"></textarea>
+              <textarea id="message" name="Description" placeholder="Ex. : nid de frelons en haut d'un pin, à environ 10 m, repéré ce week-end…"></textarea>
             </div>
             <div class="field field--full" style="flex-direction:row;gap:0.7rem;align-items:flex-start;">
-              <input type="checkbox" id="rgpd" name="rgpd" required style="width:auto;margin-top:0.3rem;">
+              <input type="checkbox" id="rgpd" name="Consentement RGPD" required style="width:auto;margin-top:0.3rem;">
               <label for="rgpd" style="font-weight:400;font-size:0.85rem;color:var(--gris);">J'accepte que mes informations soient utilisées pour être recontacté(e) dans le cadre de ma demande. Elles ne seront jamais transmises à des tiers. *</label>
             </div>
           </div>
@@ -326,6 +326,6 @@
   <a class="callbar__devis" href="/devis/">Devis gratuit</a>
 </div>
 
-<script src="/assets/js/main.js" defer></script>
+<script src="/assets/js/main.js?v=2" defer></script>
 </body>
 </html>

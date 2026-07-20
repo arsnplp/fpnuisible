@@ -176,16 +176,16 @@
 
       <div>
         <h2 class="display" style="font-size:1.4rem;">Écrivez-nous</h2>
-        <!-- Formulaire relié au même endpoint que le devis : voir /assets/js/main.js -->
-        <form class="form-panel" id="form-contact" novalidate>
+        <!-- Formulaire relié au même endpoint que le devis : voir /assets/js/main.js?v=2 -->
+        <form class="form-panel" id="form-contact" data-subject="Message de contact - fpnaturenuisible.fr" novalidate>
           <div class="form-grid">
             <div class="field">
               <label for="nom">Nom *</label>
-              <input type="text" id="nom" name="nom" autocomplete="name" required>
+              <input type="text" id="nom" name="Nom" autocomplete="name" required>
             </div>
             <div class="field">
               <label for="tel">Téléphone *</label>
-              <input type="tel" id="tel" name="telephone" autocomplete="tel" required>
+              <input type="tel" id="tel" name="Telephone" autocomplete="tel" required>
             </div>
             <div class="field field--full">
               <label for="email">E-mail <small>(facultatif)</small></label>
@@ -193,10 +193,10 @@
             </div>
             <div class="field field--full">
               <label for="message">Votre message *</label>
-              <textarea id="message" name="message" required></textarea>
+              <textarea id="message" name="Message" required></textarea>
             </div>
             <div class="field field--full" style="flex-direction:row;gap:0.7rem;align-items:flex-start;">
-              <input type="checkbox" id="rgpd" name="rgpd" required style="width:auto;margin-top:0.3rem;">
+              <input type="checkbox" id="rgpd" name="Consentement RGPD" required style="width:auto;margin-top:0.3rem;">
               <label for="rgpd" style="font-weight:400;font-size:0.85rem;color:var(--gris);">J'accepte d'être recontacté(e) dans le cadre de ma demande. *</label>
             </div>
           </div>
@@ -292,6 +292,6 @@
   <a class="callbar__devis" href="/devis/">Devis gratuit</a>
 </div>
 
-<script src="/assets/js/main.js" defer></script>
+<script src="/assets/js/main.js?v=2" defer></script>
 </body>
 </html>

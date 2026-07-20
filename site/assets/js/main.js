@@ -52,7 +52,7 @@
      Tant que FORM_ENDPOINT est vide, le formulaire affiche la
      confirmation visuelle sans rien envoyer (mode démo).
      ============================================================ */
-  var FORM_ENDPOINT = "";
+  var FORM_ENDPOINT = "https://formspree.io/f/mwvgbabv";
 
   var form = document.getElementById("form-devis") || document.getElementById("form-contact");
   if (form) {
@@ -60,6 +60,18 @@
       ev.preventDefault();
       var btn = form.querySelector('button[type="submit"]');
       var success = document.getElementById("form-success");
+
+      /* Sujet d'e-mail clair et parlant (Formspree utilise le champ _subject) */
+      var subject = form.getAttribute("data-subject") || "Nouveau message — fpnaturenuisible.fr";
+      var choix = form.querySelector('input[name="Type de nuisible"]:checked');
+      if (choix) {
+        var cp = form.querySelector('[name="Code postal et ville"]');
+        subject = "Devis : " + choix.value + (cp && cp.value ? " — " + cp.value : "");
+      }
+      var hs = form.querySelector('input[name="_subject"]');
+      if (!hs) { hs = document.createElement("input"); hs.type = "hidden"; hs.name = "_subject"; form.appendChild(hs); }
+      hs.value = subject;
+
       var done = function () {
         form.style.display = "none";
         if (success) {
