@@ -20,7 +20,8 @@
       "theme": "guepes",
       "keyword": "prix destruction nid de guêpes",
       "brief": "Fourchette de prix VALIDÉE : 90 à 180 € selon la hauteur et l'accès (ne pas inventer d'autres chiffres). Ce qui fait varier le tarif (hauteur, emplacement sous toiture/dans un mur, urgence, difficulté d'accès). Pourquoi se méfier des prix trop bas. Devis gratuit et prix ferme avant intervention. Lien interne vers /destruction-nid-de-guepes/ et /devis/.",
-      "status": "pending"
+      "status": "published",
+      "publishedAt": "2026-07-27"
     },
     {
       "slug": "piqures-guepes-frelons-bons-reflexes",
