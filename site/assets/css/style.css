@@ -42,6 +42,11 @@ body {
   color: var(--encre);
   background: var(--creme);
   font-variation-settings: "wdth" 100;
+  /* Garde-fou anti-debordement horizontal : empeche tout element large de
+     decaler la page ou d'elargir le viewport mobile (page qui bouge au zoom).
+     'clip' (et non 'hidden') ne cree PAS de conteneur de defilement -> le
+     header en position:sticky continue de fonctionner. */
+  overflow-x: clip;
 }
 img { max-width: 100%; height: auto; display: block; }
 a { color: inherit; }
@@ -365,11 +370,14 @@ h2.display { font-size: clamp(1.5rem, 3.6vw, 2.35rem); }
 
 /* ---------- Cartes services ---------- */
 .grid { display: grid; gap: 1.4rem; }
-.grid--3 { grid-template-columns: repeat(3, 1fr); }
-.grid--2 { grid-template-columns: repeat(2, 1fr); }
-.grid--4 { grid-template-columns: repeat(4, 1fr); }
-@media (max-width: 980px) { .grid--3, .grid--4 { grid-template-columns: repeat(2, 1fr); } }
-@media (max-width: 640px) { .grid--3, .grid--2, .grid--4 { grid-template-columns: 1fr; } }
+/* minmax(0, 1fr) au lieu de 1fr : empeche une carte au contenu large (image,
+   titre) d'elargir sa colonne au-dela du conteneur -> plus de debordement
+   horizontal ni de viewport elargi sur mobile (page qui se decale au zoom). */
+.grid--3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.grid--2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.grid--4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+@media (max-width: 980px) { .grid--3, .grid--4 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 640px) { .grid--3, .grid--2, .grid--4 { grid-template-columns: minmax(0, 1fr); } }
 
 .card {
   background: var(--blanc);
