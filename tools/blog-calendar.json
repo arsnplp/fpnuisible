@@ -31,7 +31,8 @@
       "theme": "frelons",
       "keyword": "que faire piqûre de guêpe frelon",
       "brief": "Premiers gestes après une piqûre (retirer le dard s'il y a lieu, désinfecter, froid). Signes de réaction allergique grave (œdème, gêne respiratoire) = appel 15/112 immédiat. Cas des piqûres multiples. Ne pas s'approcher d'un nid pour éviter l'attaque collective. Rester factuel et prudent, pas de conseil médical hasardeux. Lien interne vers /destruction-nid-de-guepes/ et /destruction-nid-de-frelons/.",
-      "status": "pending"
+      "status": "published",
+      "publishedAt": "2026-08-03"
     },
     {
       "slug": "rats-souris-maison-automne",

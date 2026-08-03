@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="666" viewBox="0 0 1000 666" role="img" aria-label="Frelons — FP Nature Nuisible">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1c1a15"/><stop offset="1" stop-color="#12100c"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="82%" cy="14%" r="55%">
+      <stop offset="0" stop-color="#ffc400" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#ffc400" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#ffffff" opacity="0.05"/>
+    </pattern>
+    <pattern id="hz" width="40" height="40" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+      <rect width="40" height="40" fill="#12100c"/><rect width="20" height="40" fill="#ffc400"/>
+    </pattern>
+  </defs>
+
+  <rect width="1000" height="666" fill="url(#bg)"/>
+  <rect width="1000" height="666" fill="url(#glow)"/>
+  <rect width="1000" height="666" fill="url(#dots)"/>
+
+  <!-- icône du nuisible -->
+  <svg x="360" y="150" width="280" height="280" viewBox="0 0 24 24" fill="none"
+       stroke="#ffc400" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="8" r="5"/><path d="M12 13v8m-4-5h8"/>
+  </svg>
+
+  <!-- libellé -->
+  <text x="500" y="500" text-anchor="middle" font-family="Archivo, Helvetica, Arial, sans-serif"
+        font-size="52" font-weight="800" letter-spacing="1" fill="#faf7f0">FRELONS</text>
+  <text x="500" y="536" text-anchor="middle" font-family="Archivo, Helvetica, Arial, sans-serif"
+        font-size="19" font-weight="700" letter-spacing="4" fill="#ffc400">FP NATURE NUISIBLE</text>
+
+  <!-- accent danger en bas -->
+  <rect x="0" y="654" width="1000" height="12" fill="url(#hz)"/>
+</svg>
