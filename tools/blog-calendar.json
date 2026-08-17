@@ -53,7 +53,8 @@
       "theme": "cafards",
       "keyword": "prix désinsectisation cafards",
       "brief": "Pourquoi les cafards reviennent (gel mal posé, foyers cachés). Méthode pro (gel + suivi jusqu'à éradication). Facteurs de prix (surface, niveau d'infestation, nombre de passages). Rester prudent sur les chiffres : donner une fourchette indicative raisonnable et renvoyer au devis gratuit pour un prix ferme. Lien interne vers /desinsectisation/ et /devis/.",
-      "status": "pending"
+      "status": "published",
+      "publishedAt": "2026-08-17"
     },
     {
       "slug": "chenilles-processionnaires-calendrier-provence",
