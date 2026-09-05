@@ -789,3 +789,16 @@ a.card { text-decoration: none; color: inherit; }
 .mt-2 { margin-top: 2rem; }
 .center { text-align: center; }
 .center .section-head { margin-inline: auto; }
+
+/* Derniere carte prestation : seule sur sa ligne en desktop -> format large */
+.card--wide { grid-column: 1 / -1; flex-direction: row; align-items: stretch; }
+.card--wide .card__img { flex: 0 0 38%; aspect-ratio: auto; min-height: 240px; border-bottom: 0; border-right: 2px solid var(--noir); }
+.card--wide .card__body { justify-content: center; padding: 2rem 2.4rem; }
+.card--wide .card__body h3 { font-size: 1.35rem; }
+.card--wide .card__body p { max-width: 52ch; flex: 0 0 auto; margin-bottom: 1.1rem; }
+.card--wide .card__link { align-self: flex-start; }
+@media (max-width: 640px) {
+  .card--wide { flex-direction: column; }
+  .card--wide .card__img { flex: none; aspect-ratio: 4 / 3; min-height: 0; border-right: 0; border-bottom: 2px solid var(--noir); }
+  .card--wide .card__body { padding: 1.3rem 1.4rem 1.5rem; }
+}
