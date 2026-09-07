@@ -86,7 +86,8 @@
       "theme": "abeilles",
       "keyword": "essaim abeilles jardin que faire",
       "brief": "Différence essaim d'abeilles (protégées, relocalisées) vs nid de guêpes/frelons (détruits). Ne pas paniquer ni asperger : un essaim au repos est peu agressif. FP Nature Nuisible relocalise sans détruire, avec des apiculteurs. Lien interne vers /recuperation-essaim-abeilles/.",
-      "status": "pending"
+      "status": "published",
+      "publishedAt": "2026-09-07"
     },
     {
       "slug": "calendrier-nuisibles-provence-mois-par-mois",
