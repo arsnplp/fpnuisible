@@ -22,20 +22,25 @@ mettre le contenu de ce dossier à la racine du domaine.
 Le header/footer est dupliqué dans chaque page : pour le modifier
 partout, faire un rechercher/remplacer sur l'ensemble des fichiers.
 
-## ⚠ À compléter avant mise en ligne (recherchez « [ » dans les fichiers)
+## État des informations de l'entreprise
 
-1. ~~Adresse postale~~ — fait : 1670 Chemin des Tuilières,
-   13290 Aix-en-Provence (footer, contact, mentions légales, JSON-LD).
-2. **E-mail** — `/contact/` et `/mentions-legales/`.
-3. **Horaires exacts** — `/contact/` : `[08h00 – 21h00 à confirmer]`.
-4. **Mentions légales** — forme juridique, SIRET, directeur de la
-   publication, hébergeur.
-5. **Dépigeonnage** — une phrase `[Certaines prestations spécifiques —
-   à confirmer avec l'entreprise.]` sur `/depigeonnage/`.
-6. **Certifications** (Certibiocide…) — à ajouter sur `/a-propos/` si
+> Ce fichier est à la racine du dépôt, **hors de `site/`**, pour ne pas être servi en ligne.
+
+1. ~~Adresse postale~~ — 1670 Chemin des Tuilières, Aix-en-Provence.
+   ⚠ **Code postal à trancher** : le site affiche 13290, le registre
+   (Insee/RNE) indique 13080, la Base Adresse Nationale 13100. Aligner
+   partout sur le code postal de la **fiche Google** (footer ×50, contact,
+   JSON-LD `postalCode`, `llms.txt`). Les mentions légales reprennent
+   l'adresse exacte du registre (13080).
+2. ~~Mentions légales~~ — fait le 10/09/2026 : F.P NATURE, SAS au capital
+   de 500 €, RCS Aix-en-Provence 791 757 081, SIRET 791 757 081 00017,
+   TVA FR51791757081, directeur de publication Pascal Viou (Président).
+   Identité aussi dans le footer, `/a-propos/`, le JSON-LD et `llms.txt`.
+3. **E-mail** — aucun pour l'instant (ligne retirée de `/contact/` et des
+   mentions légales). À ajouter, idéalement en @fpnaturenuisible.fr.
+4. **Horaires exacts** — non confirmés, `/contact/` affiche « 7 jours sur 7 ».
+5. **Certifications** (Certibiocide…) — à ajouter sur `/a-propos/` si
    l'entreprise les détient ; rien n'a été inventé.
-7. ~~JSON-LD accueil~~ — fait : `streetAddress` et code postal 13290
-   renseignés dans le bloc LocalBusiness de `index.html`.
 
 ## Connecter le formulaire (devis + contact)
 
