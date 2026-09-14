@@ -97,7 +97,8 @@
       "theme": "generic",
       "keyword": "calendrier nuisibles Provence",
       "brief": "RESSOURCE de référence (article un peu plus long, pensé pour être cité/lié). Mois par mois : quel nuisible est actif et quand agir (guêpes/frelons été-automne, chenilles automne-printemps, rongeurs automne-hiver, cafards toute l'année, pigeons toute l'année). Format clair (liste par mois ou par saison). Liens internes vers les prestations concernées.",
-      "status": "pending"
+      "status": "published",
+      "publishedAt": "2026-09-14"
     },
     {
       "slug": "frelon-europeen-ou-asiatique-differences",
