@@ -1,5 +1,5 @@
 {
-  "_comment": "File d'attente des sujets d'articles pour la routine hebdomadaire. L'agent prend le PREMIER sujet 'pending', écrit l'article, passe son status à 'published' (avec la date). Quand plus aucun 'pending' : ne rien inventer, prévenir par e-mail. Ajouter de nouveaux sujets en fin de liste au besoin.",
+  "_comment": "File d'attente des sujets d'articles pour la routine hebdomadaire. L'agent prend le PREMIER sujet 'pending', écrit l'article, passe son status à 'published' (avec la date). LA FILE NE DOIT JAMAIS ÊTRE VIDE : s'il reste moins de 6 sujets 'pending', l'agent ajoute lui-même 6 nouveaux sujets SEO / SEO local (mots-clés distincts de tout l'existant) en fin de liste, avant ou après la rédaction. Ne jamais s'arrêter faute de sujet.",
   "articles": [
     {
       "slug": "frelon-asiatique-aix-reconnaitre-signaler",
@@ -110,6 +110,166 @@
       "brief": "Tableau/critères : taille, couleur (pattes jaunes du frelon asiatique, abdomen sombre), comportement, type de nid, activité. Pourquoi la distinction compte (danger, méthode). Rester factuel. Lien interne vers /destruction-nid-de-frelons/.",
       "status": "published",
       "publishedAt": "2026-09-21"
+    },
+    {
+      "slug": "souris-dans-la-maison-signes-que-faire",
+      "title": "Souris dans la maison : les signes qui ne trompent pas et que faire",
+      "cardTitle": "Souris dans la maison : que faire ?",
+      "tag": "Dératisation",
+      "theme": "rats",
+      "keyword": "souris dans la maison que faire",
+      "brief": "Signes (crottes, grignotages, bruits nocturnes, odeur), où elles se cachent, pourquoi les pièges seuls ne suffisent pas en cas d'installation, prévention (points d'entrée, stockage alimentaire). Lien /deratisation/ et /anti-nuisibles-aix-en-provence/. Prix autorisé seulement : dératisation 130 à 300 EUR.",
+      "status": "pending"
+    },
+    {
+      "slug": "deratisation-venelles-rongeurs-automne",
+      "title": "Dératisation à Venelles : protéger sa maison des rongeurs cet automne",
+      "cardTitle": "Dératisation à Venelles",
+      "tag": "Dératisation",
+      "theme": "rats",
+      "keyword": "dératisation Venelles",
+      "brief": "Article SEO local : pourquoi les maisons avec jardin de Venelles et alentours voient arriver rats et souris à l'automne, points faibles typiques (vides sanitaires, garages, compost), déroulé d'une intervention, suivi. Liens /anti-nuisibles-venelles/, /deratisation/.",
+      "status": "pending"
+    },
+    {
+      "slug": "rats-dans-le-grenier-bruits-nuit",
+      "title": "Bruits dans le grenier la nuit : rats, souris ou loirs ?",
+      "cardTitle": "Bruits dans le grenier : quel animal ?",
+      "tag": "Identification",
+      "theme": "rats",
+      "keyword": "bruit grenier la nuit rat",
+      "brief": "Aider à identifier l'animal selon le bruit, l'heure, les traces. Mentionner le loir (espèce protégée : ne pas le traiter comme un rongeur nuisible, orienter correctement). Risques pour l'isolation et les câbles. Liens /deratisation/, /piegeage-esod/ si pertinent.",
+      "status": "pending"
+    },
+    {
+      "slug": "punaises-ou-cafards-difference",
+      "title": "Blatte germanique ou blatte orientale : reconnaître son cafard",
+      "cardTitle": "Blatte germanique ou orientale ?",
+      "tag": "Cafards",
+      "theme": "cafards",
+      "keyword": "blatte germanique ou orientale",
+      "brief": "Critères d'identification (taille, couleur, lieux de vie : cuisine vs caves/égouts), pourquoi l'espèce change la méthode de traitement, erreurs fréquentes (bombes insecticides). Lien /desinsectisation/. Ne pas répéter l'article 'cafards pourquoi ils reviennent' : angle identification uniquement.",
+      "status": "pending"
+    },
+    {
+      "slug": "cafards-restaurant-aix-obligations-hygiene",
+      "title": "Cafards en restaurant à Aix-en-Provence : obligations et plan de lutte",
+      "cardTitle": "Cafards en restaurant : obligations",
+      "tag": "Professionnels",
+      "theme": "cafards",
+      "keyword": "cafards restaurant Aix-en-Provence",
+      "brief": "Cible pros de la restauration du pays d'Aix : obligations d'hygiène et de lutte contre les nuisibles (plan de maîtrise sanitaire, traçabilité des interventions), risques en cas de contrôle, intérêt d'un contrat de suivi. Rester général et factuel, pas de chiffres de sanctions. Liens /desinsectisation/, /anti-nuisibles-aix-en-provence/.",
+      "status": "pending"
+    },
+    {
+      "slug": "pigeons-copropriete-qui-doit-agir",
+      "title": "Pigeons en copropriété : qui doit agir et quelles solutions ?",
+      "cardTitle": "Pigeons en copropriété : qui agit ?",
+      "tag": "Dépigeonnage",
+      "theme": "pigeons",
+      "keyword": "pigeons copropriété que faire",
+      "brief": "Parties communes vs privatives, rôle du syndic, nuisances (fientes, dégradations), solutions durables (filets, pics, systèmes anti-posé), pourquoi nourrir les pigeons aggrave le problème. Lien /depigeonnage/. Angle distinct de l'article 'pigeons toit balcon'.",
+      "status": "pending"
+    },
+    {
+      "slug": "frelon-asiatique-hiver-que-deviennent-nids",
+      "title": "Frelon asiatique en hiver : que deviennent les nids ?",
+      "cardTitle": "Frelons asiatiques en hiver",
+      "tag": "Frelons",
+      "theme": "frelons",
+      "keyword": "frelon asiatique hiver nid",
+      "brief": "Cycle de vie (fondatrices qui hivernent, nid abandonné en hiver), faut-il détruire un nid vide, intérêt du piégeage de printemps, que surveiller dès février. Lien /destruction-nid-de-frelons/. Prix autorisé seulement : nid 90 à 180 EUR.",
+      "status": "pending"
+    },
+    {
+      "slug": "nid-de-frelons-gardanne-bouc-bel-air",
+      "title": "Nid de frelons à Gardanne ou Bouc-Bel-Air : les bons réflexes",
+      "cardTitle": "Nid de frelons à Gardanne",
+      "tag": "Frelons",
+      "theme": "frelons",
+      "keyword": "nid de frelons Gardanne",
+      "brief": "Article SEO local : où se trouvent les nids dans ce secteur (arbres, haies, toitures, cabanons), ne jamais intervenir soi-même, comment se passe l'intervention, délais. Liens /anti-nuisibles-gardanne/, /anti-nuisibles-bouc-bel-air/, /destruction-nid-de-frelons/.",
+      "status": "pending"
+    },
+    {
+      "slug": "chenilles-processionnaires-chiens-danger",
+      "title": "Chenilles processionnaires et chiens : le danger à connaître",
+      "cardTitle": "Chenilles processionnaires et chiens",
+      "tag": "Chenilles",
+      "theme": "chenilles",
+      "keyword": "chenille processionnaire chien",
+      "brief": "Pourquoi les poils urticants sont dangereux pour les chiens et chats, période à risque en Provence (fin d'hiver, printemps), réflexes immédiats et appel au vétérinaire sans détailler de traitement médical, prévention dans le jardin. Lien /chenilles-processionnaires/. Angle distinct du calendrier de traitement.",
+      "status": "pending"
+    },
+    {
+      "slug": "chenilles-processionnaires-pins-eguilles-puyricard",
+      "title": "Chenilles processionnaires du pin à Puyricard et Éguilles : agir avant l'hiver",
+      "cardTitle": "Processionnaires : agir avant l'hiver",
+      "tag": "Chenilles",
+      "theme": "chenilles",
+      "keyword": "chenilles processionnaires Puyricard",
+      "brief": "SEO local : pinèdes du nord d'Aix, repérer les nids d'hiver, quand intervenir (échenillage, éco-pièges), obligations/recommandations locales à rester général. Liens /anti-nuisibles-puyricard/, /chenilles-processionnaires/.",
+      "status": "pending"
+    },
+    {
+      "slug": "guepes-terrasse-eloigner-sans-danger",
+      "title": "Guêpes sur la terrasse : comment les éloigner sans danger",
+      "cardTitle": "Éloigner les guêpes de la terrasse",
+      "tag": "Guêpes",
+      "theme": "guepes",
+      "keyword": "éloigner guêpes terrasse",
+      "brief": "Gestes simples (sucres, déchets, fruits tombés), pièges maison : limites et impact sur les autres insectes, quand la présence régulière signale un nid proche, pourquoi appeler un pro. Lien /destruction-nid-de-guepes/.",
+      "status": "pending"
+    },
+    {
+      "slug": "nid-de-guepes-dans-le-mur-ou-toiture",
+      "title": "Nid de guêpes dans un mur ou sous la toiture : que faire ?",
+      "cardTitle": "Nid de guêpes dans un mur",
+      "tag": "Guêpes",
+      "theme": "guepes",
+      "keyword": "nid de guêpes dans le mur",
+      "brief": "Pourquoi ne pas boucher le trou (guêpes qui ressortent à l'intérieur), risques, comment le professionnel traite un nid inaccessible, délais. Lien /destruction-nid-de-guepes/. Prix autorisé : 90 à 180 EUR.",
+      "status": "pending"
+    },
+    {
+      "slug": "fouine-grenier-que-faire",
+      "title": "Fouine dans le grenier : reconnaître sa présence et s'en débarrasser",
+      "cardTitle": "Une fouine dans le grenier ?",
+      "tag": "Piégeage",
+      "theme": "generic",
+      "keyword": "fouine grenier que faire",
+      "brief": "Signes (bruits nocturnes, crottes, isolation arrachée, odeur), dégâts possibles, cadre du piégeage des espèces susceptibles d'occasionner des dégâts (ESOD) à rester général, prévention. Lien /piegeage-esod/. Ne rien affirmer sur des obligations précises non vérifiées.",
+      "status": "pending"
+    },
+    {
+      "slug": "anti-nuisibles-pertuis-sud-luberon",
+      "title": "Anti-nuisibles à Pertuis : les problèmes les plus fréquents selon la saison",
+      "cardTitle": "Nuisibles à Pertuis",
+      "tag": "Guide",
+      "theme": "generic",
+      "keyword": "anti-nuisibles Pertuis",
+      "brief": "SEO local : panorama des nuisibles rencontrés à Pertuis et en Sud-Luberon (bâti ancien, zones agricoles, bord de Durance) selon les saisons, quand appeler, zone d'intervention. Liens /anti-nuisibles-pertuis/, /zone-intervention/, 2 pages prestation.",
+      "status": "pending"
+    },
+    {
+      "slug": "essaim-abeilles-cheminee-toiture",
+      "title": "Essaim d'abeilles dans une cheminée ou un toit : que faire ?",
+      "cardTitle": "Abeilles dans la cheminée",
+      "tag": "Abeilles",
+      "theme": "abeilles",
+      "keyword": "essaim abeilles cheminée",
+      "brief": "Différence essaim de passage / colonie installée, ne pas enfumer ni traiter, pourquoi faire appel à un pro pour une récupération, cas des accès difficiles. Lien /recuperation-essaim-abeilles/. Angle distinct de l'article 'essaim au jardin'.",
+      "status": "pending"
+    },
+    {
+      "slug": "contrat-entretien-nuisibles-professionnels-aix",
+      "title": "Contrat anti-nuisibles pour professionnels : à quoi ça sert ?",
+      "cardTitle": "Contrat anti-nuisibles pour pros",
+      "tag": "Professionnels",
+      "theme": "generic",
+      "keyword": "contrat dératisation désinsectisation professionnel Aix",
+      "brief": "Cible commerces, restaurants, entrepôts, syndics du pays d'Aix : principe du passage préventif régulier, rapport d'intervention et traçabilité, avantages vs interventions ponctuelles. Pas de prix. Liens /deratisation/, /desinsectisation/, /devis/.",
+      "status": "pending"
     }
   ]
 }
