@@ -119,7 +119,8 @@
       "theme": "rats",
       "keyword": "souris dans la maison que faire",
       "brief": "Signes (crottes, grignotages, bruits nocturnes, odeur), où elles se cachent, pourquoi les pièges seuls ne suffisent pas en cas d'installation, prévention (points d'entrée, stockage alimentaire). Lien /deratisation/ et /anti-nuisibles-aix-en-provence/. Prix autorisé seulement : dératisation 130 à 300 EUR.",
-      "status": "pending"
+      "status": "published",
+      "publishedAt": "2026-09-29"
     },
     {
       "slug": "deratisation-venelles-rongeurs-automne",
