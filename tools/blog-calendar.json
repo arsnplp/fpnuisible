@@ -141,7 +141,8 @@
       "theme": "rats",
       "keyword": "bruit grenier la nuit rat",
       "brief": "Aider à identifier l'animal selon le bruit, l'heure, les traces. Mentionner le loir (espèce protégée : ne pas le traiter comme un rongeur nuisible, orienter correctement). Risques pour l'isolation et les câbles. Liens /deratisation/, /piegeage-esod/ si pertinent.",
-      "status": "pending"
+      "status": "published",
+      "publishedAt": "2026-10-12"
     },
     {
       "slug": "punaises-ou-cafards-difference",
