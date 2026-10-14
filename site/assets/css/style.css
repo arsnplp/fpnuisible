@@ -580,6 +580,13 @@ a.card { text-decoration: none; color: inherit; }
 .prose .encart b { color: var(--jaune); }
 .prose .encart p { color: var(--gris-2); }
 .prose .encart .btn { margin-top: 0.4rem; }
+/* Accessibilité (WCAG AA) : listes et liens lisibles dans l'encart sombre ; les liens
+   jaunes en ligne (style="color:var(--jaune)") restent jaunes dans l'encart mais
+   reprennent la couleur du texte hors encart (jaune sur crème = 1,5:1). */
+.prose .encart li, .prose .encart li strong { color: var(--gris-2); }
+.prose .encart a:not(.btn) { color: var(--jaune); }
+.prose a[style*="var(--jaune)"] { color: inherit !important; }
+.prose .encart a[style*="var(--jaune)"] { color: var(--jaune) !important; }
 .table-wrap { overflow-x: auto; margin: 2rem 0; }
 .prose table { border-collapse: collapse; width: 100%; min-width: 560px; font-size: 0.95rem; background: var(--blanc); border: 2px solid var(--noir); }
 .prose th { background: var(--noir); color: var(--jaune); text-transform: uppercase; font-size: 0.8rem; letter-spacing: 0.06em; text-align: left; padding: 0.7rem 0.9rem; }

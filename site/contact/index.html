@@ -11,7 +11,7 @@
 <link rel="icon" href="/assets/img/favicon-48.png?v=2" type="image/png">
 <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png?v=2">
 <link rel="preload" href="/assets/fonts/archivo-variable.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/style.css?v=5">
+<link rel="stylesheet" href="/assets/css/style.css?v=6">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="fr_FR">
 <meta property="og:site_name" content="FP Nature Nuisible">
@@ -163,10 +163,28 @@
           </li>
         </ul>
         <div class="img-frame" style="margin-top:1.5rem;">
-          <iframe title="Localisation de FP Nature Nuisible à Aix-en-Provence"
-            src="https://www.google.com/maps?q=1670+Chemin+des+Tuili%C3%A8res,+13290+Aix-en-Provence&output=embed"
-            width="100%" height="300" style="border:0;display:block;" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+          <div class="map-consent" data-map-src="https://www.google.com/maps?q=1670+Chemin+des+Tuili%C3%A8res,+13290+Aix-en-Provence&output=embed" style="min-height:300px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0.8rem;padding:1.5rem;text-align:center;background:var(--creme);color:var(--noir);">
+            <p style="margin:0;">La carte interactive est fournie par Google Maps, qui dépose des cookies. Elle ne se charge que si vous le demandez.</p>
+            <button type="button" class="btn" data-map-load>Afficher la carte (Google Maps dépose des cookies)</button>
+            <a href="https://www.google.com/maps/search/?api=1&amp;query=1670+Chemin+des+Tuili%C3%A8res+Aix-en-Provence" rel="noopener" style="color:var(--noir);text-decoration:underline;">Ouvrir l'adresse dans Google Maps</a>
+          </div>
+          <script>
+          (function () {
+            var box = document.querySelector('.map-consent');
+            if (!box) return;
+            box.querySelector('[data-map-load]').addEventListener('click', function () {
+              var f = document.createElement('iframe');
+              f.title = "Localisation de FP Nature Nuisible à Aix-en-Provence";
+              f.src = box.getAttribute('data-map-src');
+              f.width = '100%'; f.height = '300'; f.loading = 'lazy';
+              f.style.border = '0'; f.style.display = 'block';
+              f.referrerPolicy = 'no-referrer-when-downgrade';
+              f.setAttribute('allowfullscreen', '');
+              box.replaceWith(f);
+              f.focus();
+            });
+          })();
+          </script>
         </div>
       </div>
 
@@ -197,6 +215,7 @@
             </div>
           </div>
           <button class="btn" type="submit" style="margin-top:1.4rem;width:100%;">Envoyer le message</button>
+        <p class="form-note">Les informations saisies sont transmises à F.P NATURE (FP Nature Nuisible) par l'intermédiaire de notre prestataire d'envoi de formulaires Formspree (États-Unis), uniquement pour répondre à votre demande. Elles sont conservées 3 ans après le dernier contact. Vous pouvez y accéder, les rectifier, les faire effacer ou vous opposer à leur traitement en appelant le 06 68 03 57 76 ou par courrier au siège. En savoir plus : <a href="/confidentialite/">politique de confidentialité</a>.</p>
         </form>
         <div class="form-success" id="form-success" role="status">
           <h3 class="display">Message bien envoyé ✔</h3>
@@ -278,7 +297,7 @@
   <div class="footer__legal">
     <div class="wrap">
       <span>© 2026 FP Nature Nuisible — F.P NATURE SAS · SIRET&nbsp;791&nbsp;757&nbsp;081&nbsp;00017</span>
-      <span><a href="/mentions-legales/">Mentions légales</a> · Site : <a href="https://fpnaturenuisible.fr/">fpnaturenuisible.fr</a></span>
+      <span><a href="/mentions-legales/">Mentions légales</a> · <a href="/confidentialite/">Confidentialité</a> · <a href="/cgu/">CGU</a> · Site : <a href="https://fpnaturenuisible.fr/">fpnaturenuisible.fr</a></span>
     </div>
   </div>
 </footer>

@@ -17,6 +17,7 @@ mettre le contenu de ce dossier à la racine du domaine.
 | `/devis/` | Formulaire de devis (à connecter, voir plus bas) |
 | `/blog/` + articles | Blog, extensible via `/blog/_modele-article.html` |
 | `/contact/`, `/a-propos/`, `/mentions-legales/`, `/404.html` | Pages annexes |
+| `/confidentialite/`, `/cgu/` | Politique de confidentialité et CGU (noindex, hors sitemap), liées depuis le footer de toutes les pages |
 | `sitemap.xml`, `robots.txt` | SEO technique |
 
 Le header/footer est dupliqué dans chaque page : pour le modifier
@@ -54,6 +55,15 @@ par l'URL de votre service (Formspree, Web3Forms, Google Forms…),
 ex. `var FORM_ENDPOINT = "https://formspree.io/f/XXXXXXX";`.
 Tant que la constante est vide, le formulaire affiche la confirmation
 sans rien envoyer (mode démo).
+
+L'endpoint actuel est Formspree : il est déclaré comme sous-traitant (USA)
+dans `/confidentialite/` et dans la mention RGPD sous chaque formulaire.
+En cas de changement de service, mettre ces deux textes à jour.
+
+**Carte Google Maps (`/contact/`)** : chargée uniquement au clic
+(« Afficher la carte »), pour ne déposer aucun cookie sans action de
+l'internaute — pas de bandeau cookies nécessaire. Ne pas remettre
+d'`<iframe>` Google directement dans la page.
 
 ## Images
 
