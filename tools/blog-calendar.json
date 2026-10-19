@@ -152,7 +152,8 @@
       "theme": "cafards",
       "keyword": "blatte germanique ou orientale",
       "brief": "Critères d'identification (taille, couleur, lieux de vie : cuisine vs caves/égouts), pourquoi l'espèce change la méthode de traitement, erreurs fréquentes (bombes insecticides). Lien /desinsectisation/. Ne pas répéter l'article 'cafards pourquoi ils reviennent' : angle identification uniquement.",
-      "status": "pending"
+      "status": "published",
+      "publishedAt": "2026-10-19"
     },
     {
       "slug": "cafards-restaurant-aix-obligations-hygiene",
