@@ -163,7 +163,8 @@
       "theme": "cafards",
       "keyword": "cafards restaurant Aix-en-Provence",
       "brief": "Cible pros de la restauration du pays d'Aix : obligations d'hygiène et de lutte contre les nuisibles (plan de maîtrise sanitaire, traçabilité des interventions), risques en cas de contrôle, intérêt d'un contrat de suivi. Rester général et factuel, pas de chiffres de sanctions. Liens /desinsectisation/, /anti-nuisibles-aix-en-provence/.",
-      "status": "pending"
+      "status": "published",
+      "publishedAt": "2026-10-26"
     },
     {
       "slug": "pigeons-copropriete-qui-doit-agir",
